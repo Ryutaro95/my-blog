@@ -1,7 +1,7 @@
 module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require("daisyui")],
   theme: {
     extend: {},
     fontSize: {

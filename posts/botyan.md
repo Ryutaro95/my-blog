@@ -206,7 +206,7 @@ func priorityToString(priority model.Priority) string {
 ```
 
 ファイル名は認識される？
-```go:main.go
+```go
 package main
 
 import "fmt"

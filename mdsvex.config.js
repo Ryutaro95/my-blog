@@ -9,6 +9,7 @@ export default {
   smartypants: {
     dashes: 'oldschool'
   },
+  highlight: ,
   remarkPlugins: [videos, relativeImages, headings],
   rehypePlugins: [
     slugPlugin,
@@ -19,6 +20,27 @@ export default {
       }
     ]
   ]
+}
+
+function highlighter(code, lang, meta){
+  let fence: any
+  let twoslash: any
+  try {
+    fence = parseFence(lex([lang, meta].filter(Boolean).join(' ')))
+  } catch (error) {
+    throw new Error(`Could not parse the codefence for this code sample \n${code}`)
+  }
+  if (fence?.twoslash === true) twoslash = runTwoSlash(code, lang as string)
+  return `{@html \`${escapeSvelte(
+    renderCodeToHTML(
+      code,
+      lang as string,
+      fence ?? {},
+      { themeName: 'material-default' },
+      await createShikiHighlighter({ theme: 'material-default' }),
+      twoslash
+    )
+  )}\` }`
 }
 
 /**
