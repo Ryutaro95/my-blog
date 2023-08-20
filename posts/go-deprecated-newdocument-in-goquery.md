@@ -48,6 +48,5 @@ func findBooks(url string) ([]Book, error) {
 
 参考
 
-[https://pkg.go.dev/github.com/PuerkitoBio/goquery#NewDocument](https://pkg.go.dev/github.com/PuerkitoBio/goquery#NewDocument)
-
+[https://pkg.go.dev/github.com/PuerkitoBio/goquery#NewDocument](https://pkg.go.dev/github.com/PuerkitoBio/goquery#NewDocument)<br>
 [https://github.com/PuerkitoBio/goquery#examples](https://github.com/PuerkitoBio/goquery#examples)
