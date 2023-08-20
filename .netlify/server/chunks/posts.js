@@ -1,14 +1,10 @@
-import { _ as __vite_glob_0_0 } from "./botyan.js";
-import { _ as __vite_glob_0_1 } from "./index3.js";
-import { _ as __vite_glob_0_2 } from "./hoge.js";
-import { _ as __vite_glob_0_3 } from "./lorem-ipsum.js";
-import { _ as __vite_glob_0_4 } from "./sample-markdown-post.js";
-import { _ as __vite_glob_0_5 } from "./test.js";
-import { _ as __vite_glob_0_6 } from "./index4.js";
+import { _ as __vite_glob_0_0 } from "./go-deprecated-newdocument-in-goquery.js";
+import { _ as __vite_glob_0_1 } from "./go-kvs-closure-lesson.js";
+import { _ as __vite_glob_0_2 } from "./ts-this-output-error.js";
 import { format } from "date-fns";
 import { parse } from "node-html-parser";
 import readingTime from "reading-time/lib/reading-time.js";
-const posts = Object.entries(/* @__PURE__ */ Object.assign({ "/posts/botyan.md": __vite_glob_0_0, "/posts/getting-started/index.md": __vite_glob_0_1, "/posts/hoge.md": __vite_glob_0_2, "/posts/lorem-ipsum.md": __vite_glob_0_3, "/posts/sample-markdown-post.md": __vite_glob_0_4, "/posts/test.md": __vite_glob_0_5, "/posts/update-started/index.md": __vite_glob_0_6 })).map(([filepath, post]) => {
+const posts = Object.entries(/* @__PURE__ */ Object.assign({ "/posts/go-deprecated-newdocument-in-goquery.md": __vite_glob_0_0, "/posts/go-kvs-closure-lesson.md": __vite_glob_0_1, "/posts/ts-this-output-error.md": __vite_glob_0_2 })).map(([filepath, post]) => {
   const html = parse(post.default.render().html);
   const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector("p");
   return {

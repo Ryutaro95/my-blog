@@ -148,9 +148,9 @@ const options = {
     <\/script>
   </head>
 
-  <body class="h-full bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400">
+  <body class="bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400">
     <div>` + body + "</div>\n  </body>\n</html>\n",
-    error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="ja">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
+    error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
 			body {
@@ -211,7 +211,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "yyqb7e"
+  version_hash: "mx1fbm"
 };
 function get_hooks() {
   return {};
