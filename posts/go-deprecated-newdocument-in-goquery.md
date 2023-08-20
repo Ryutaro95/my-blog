@@ -1,5 +1,5 @@
 ---
-title: 【goquery】 NewDocument() が非推奨となり、かわりのNewDocumentFromReader()の使い方を調べた
+title: 【Go】 goqueryのNewDocument() が非推奨となり、かわりのNewDocumentFromReader()の使い方を調べた
 date: 2023-08-18
 ---
 

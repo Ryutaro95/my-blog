@@ -109,7 +109,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en" class="relative h-full antialiased dark">\n  <head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <link rel="icon" href="/favicon.png" />\n    ' + head + `
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="ja" class="relative h-full antialiased dark">\n  <head>\n    <meta charset="utf-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <link rel="icon" href="/favicon.png" />\n    ' + head + `
     <script>
       let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
 
@@ -150,7 +150,7 @@ const options = {
 
   <body class="h-full bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400">
     <div>` + body + "</div>\n  </body>\n</html>\n",
-    error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
+    error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="ja">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
 			body {
