@@ -54,6 +54,11 @@
   <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
+<!-- {#each data.post.headings as heading} -->
+<!--   <h1>heading.id: {heading.id}</h1> -->
+<!--   <h2>heading.value: {heading.value}</h2> -->
+<!-- {/each} -->
+
 <div class="root max-w-2xl mx-auto lg:max-w-none">
   <div class="hidden lg:block pt-8">
     <div class="sticky top-0 w-full flex justify-end pt-11 pr-8">
@@ -84,7 +89,7 @@
       </header>
 
       <!-- render the post -->
-      <div class="prose dark:prose-invert ">
+      <div class="prose dark:prose-invert">
         <svelte:component this={data.component} />
       </div>
     </article>

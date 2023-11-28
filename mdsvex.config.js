@@ -61,7 +61,7 @@ function headings() {
       id: heading.value
         .toLowerCase()
         .replace(/\s/g, '-')
-        .replace(/[^a-z0-9-]/g, '')
+        .replace(/[^\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}a-z0-9ー-]/gu, '')
     }))
   }
 }
