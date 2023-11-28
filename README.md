@@ -1,3 +1,3 @@
-# SvelteKit Blog Template
+# Ryutaro's HomePage
 
 
