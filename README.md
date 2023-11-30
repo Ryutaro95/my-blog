@@ -1,7 +1,7 @@
 # Ryutaro's HomePage
 
 
-Run local
+Run local environment.
 ```bash
 $ make run-local
 ```
