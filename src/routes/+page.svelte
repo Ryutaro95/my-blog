@@ -3,6 +3,15 @@
   import PostsList from '$lib/components/PostsList.svelte'
   import SocialLinks from '$lib/components/SocialLinks.svelte'
   import { avatar, bio, name } from '$lib/info.js'
+  import { analyticsStore } from '$lib/analyticsStore'
+
+  const new_event = {
+    id: 'any-random-id',
+    data: {}, //anything you want to send to GA,
+    event: 'name-of-your-event',
+    type: 'event'
+  }
+  analyticsStore.update((existing_events) => [...existing_events, new_event])
 
   /** @type {import('./$types').PageData} */
   export let data
