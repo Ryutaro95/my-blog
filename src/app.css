@@ -22,7 +22,7 @@
   }
 
   .prose pre {
-    @apply min-w-0;
+    @apply mockup-code min-w-0;
   }
 
   html:not(.dark) .prose {
