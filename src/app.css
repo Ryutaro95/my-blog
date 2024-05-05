@@ -22,15 +22,7 @@
   }
 
   .prose pre {
-    @apply mockup-code !bg-neutral min-w-0;
-  }
-  
-  .prose pre:not(.shiki) {
-    @apply bg-neutral text-neutral-content;
-  }
-  
-  .prose pre:not(.shiki)::before {
-    @apply sticky -left-5 -ml-5;
+    @apply min-w-0;
   }
 
   html:not(.dark) .prose {
